@@ -42,7 +42,7 @@ const (
 )
 
 func init() {
-	registerCollector("softnet", defaultEnabled, NewSoftnetCollector)
+	registerCollector("softnet", defaultDisabled, NewSoftnetCollector)
 }
 
 // NewSoftnetCollector returns a new Collector exposing softnet metrics.

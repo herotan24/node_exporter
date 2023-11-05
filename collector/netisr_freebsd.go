@@ -33,7 +33,7 @@ const (
 )
 
 func init() {
-	registerCollector("netisr", defaultEnabled, NewNetisrCollector)
+	registerCollector("netisr", defaultDisabled, NewNetisrCollector)
 }
 
 func NewNetisrCollector(logger log.Logger) (Collector, error) {

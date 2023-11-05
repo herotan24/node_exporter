@@ -49,7 +49,7 @@ type cpuCollector struct {
 }
 
 func init() {
-	registerCollector("cpu", defaultEnabled, NewCPUCollector)
+	registerCollector("cpu", defaultDisabled, NewCPUCollector)
 }
 
 func NewCPUCollector(logger log.Logger) (Collector, error) {

@@ -47,7 +47,7 @@ var (
 )
 
 func init() {
-	registerCollector("hwmon", defaultEnabled, NewHwMonCollector)
+	registerCollector("hwmon", defaultDisabled, NewHwMonCollector)
 }
 
 type hwMonCollector struct {

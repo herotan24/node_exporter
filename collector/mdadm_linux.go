@@ -32,7 +32,7 @@ type mdadmCollector struct {
 }
 
 func init() {
-	registerCollector("mdadm", defaultEnabled, NewMdadmCollector)
+	registerCollector("mdadm", defaultDisabled, NewMdadmCollector)
 }
 
 // NewMdadmCollector returns a new Collector exposing raid statistics.

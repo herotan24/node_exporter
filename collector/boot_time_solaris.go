@@ -28,7 +28,7 @@ type bootTimeCollector struct {
 }
 
 func init() {
-	registerCollector("boottime", defaultEnabled, newBootTimeCollector)
+	registerCollector("boottime", defaultDisabled, newBootTimeCollector)
 }
 
 func newBootTimeCollector(logger log.Logger) (Collector, error) {

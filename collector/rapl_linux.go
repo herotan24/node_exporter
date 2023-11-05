@@ -39,7 +39,7 @@ type raplCollector struct {
 }
 
 func init() {
-	registerCollector(raplCollectorSubsystem, defaultEnabled, NewRaplCollector)
+	registerCollector(raplCollectorSubsystem, defaultDisabled, NewRaplCollector)
 }
 
 var (

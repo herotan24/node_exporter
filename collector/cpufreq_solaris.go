@@ -33,7 +33,7 @@ type cpuFreqCollector struct {
 }
 
 func init() {
-	registerCollector("cpufreq", defaultEnabled, NewCpuFreqCollector)
+	registerCollector("cpufreq", defaultDisabled, NewCpuFreqCollector)
 }
 
 func NewCpuFreqCollector(logger log.Logger) (Collector, error) {

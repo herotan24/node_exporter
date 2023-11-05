@@ -77,7 +77,7 @@ type Dict struct {
 }
 
 func init() {
-	registerCollector("os", defaultEnabled, NewOSCollector)
+	registerCollector("os", defaultDisabled, NewOSCollector)
 }
 
 // NewOSCollector returns a new Collector exposing os-release information.

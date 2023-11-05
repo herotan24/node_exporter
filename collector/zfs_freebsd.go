@@ -36,7 +36,7 @@ const (
 )
 
 func init() {
-	registerCollector("zfs", defaultEnabled, NewZfsCollector)
+	registerCollector("zfs", defaultDisabled, NewZfsCollector)
 }
 
 func NewZfsCollector(logger log.Logger) (Collector, error) {

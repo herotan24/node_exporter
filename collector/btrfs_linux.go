@@ -36,7 +36,7 @@ type btrfsCollector struct {
 }
 
 func init() {
-	registerCollector("btrfs", defaultEnabled, NewBtrfsCollector)
+	registerCollector("btrfs", defaultDisabled, NewBtrfsCollector)
 }
 
 // NewBtrfsCollector returns a new Collector exposing Btrfs statistics.

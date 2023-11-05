@@ -35,7 +35,7 @@ type meminfoCollector struct {
 }
 
 func init() {
-	registerCollector("meminfo", defaultEnabled, NewMeminfoCollector)
+	registerCollector("meminfo", defaultDisabled, NewMeminfoCollector)
 }
 
 // NewMeminfoCollector returns a new Collector exposing memory stats.

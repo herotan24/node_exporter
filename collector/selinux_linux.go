@@ -30,7 +30,7 @@ type selinuxCollector struct {
 }
 
 func init() {
-	registerCollector("selinux", defaultEnabled, NewSelinuxCollector)
+	registerCollector("selinux", defaultDisabled, NewSelinuxCollector)
 }
 
 // NewSelinuxCollector returns a new Collector exposing SELinux statistics.
